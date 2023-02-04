@@ -1,18 +1,17 @@
 ﻿using System;
 using UnityEngine;
-using Random = Unity.Mathematics.Random;
 
 public class FactoryTrigger : MonoBehaviour
 {
-    [SerializeField] private int maxBottles;
+    [SerializeField] private int maxBottles = 5;
 
     private System.Random _random;
-    private int _enumCount;
+
+    private static readonly int EnumCount = Enum.GetValues(typeof(BottleColor)).Length;
 
     private void Awake()
     {
         _random = new System.Random();
-        _enumCount = Enum.GetValues(typeof(BottleColor)).Length;
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -29,7 +28,7 @@ public class FactoryTrigger : MonoBehaviour
             print("LOADING CAR");
             for (var i = 0; i < maxBottles; i++)
             {
-                var color = (BottleColor)_random.Next(0, _enumCount);
+                var color = (BottleColor)_random.Next(0, EnumCount);
                 carInventory.AddBottle(color);
             }
         }
