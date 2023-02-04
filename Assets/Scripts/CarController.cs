@@ -4,9 +4,15 @@ using UnityEngine.InputSystem;
 public class CarController : MonoBehaviour
 {
     [SerializeField] private float driftFactor = 0.2f;
-    [SerializeField] private float accelerationFactor = 7.5f;
     [SerializeField] private float turnFactor = 3.5f;
+
+    [SerializeField] private float accelerationFactor = 7.5f;
     [SerializeField] private float maxSpeed = 10f;
+
+    [SerializeField] private float reverseFactor = 3.5f;
+    [SerializeField] private float maxReverse = 5f;
+
+    [SerializeField] private float turnBuildupThreshold = 2.0f;
 
     private float _accelerationInput;
     private float _steeringInput;
@@ -29,20 +35,38 @@ public class CarController : MonoBehaviour
 
     private void ApplyEngineForce()
     {
-        _rigidbody.drag = _accelerationInput == 0 ? Mathf.Lerp(_rigidbody.drag, 3f, Time.fixedDeltaTime * 3) : 0;
-
         var velocityVsUp = Vector2.Dot(transform.up, _rigidbody.velocity);
+
+        // If not accelerating, start dragging
+        if ((_accelerationInput <= 0 && velocityVsUp > 0) || (_accelerationInput >= 0 && velocityVsUp < 0))
+        {
+            _rigidbody.drag = Mathf.Lerp(_rigidbody.drag, 1f, Time.fixedDeltaTime * 3);
+        }
+        else
+        {
+            _rigidbody.drag = 0;
+        }
+
         if (velocityVsUp > maxSpeed && _accelerationInput > 0) return;
-        if (velocityVsUp < -maxSpeed * 0.5f && _accelerationInput < 0) return;
+        if (velocityVsUp < -maxReverse && _accelerationInput < 0) return;
         if (_rigidbody.velocity.sqrMagnitude > maxSpeed * maxSpeed && _accelerationInput > 0) return;
-        
-        var engineForceVector = transform.up * (_accelerationInput * accelerationFactor);
+
+        var engineForceVector = _accelerationInput > 0 ? transform.up * (_accelerationInput * accelerationFactor) : transform.up * (_accelerationInput * reverseFactor);
         _rigidbody.AddForce(engineForceVector, ForceMode2D.Force);
     }
 
     private void ApplySteering()
     {
-        _rotationAngle -= _steeringInput * turnFactor * Mathf.Clamp01(_rigidbody.velocity.magnitude / 8);
+        var velocityVsUp = Vector2.Dot(transform.up, _rigidbody.velocity);
+        if(Mathf.Abs(velocityVsUp) < turnBuildupThreshold)
+        {
+            _rotationAngle -= _steeringInput * turnFactor * (Mathf.Abs(velocityVsUp) / turnBuildupThreshold);
+        }
+        else
+        {
+            _rotationAngle -= _steeringInput * turnFactor;
+        }
+
         _rigidbody.MoveRotation(_rotationAngle);
     }
 
@@ -52,6 +76,9 @@ public class CarController : MonoBehaviour
         Vector2 forwardVelocity = up * Vector2.Dot(_rigidbody.velocity, up);
         var right = transform.right;
         Vector2 rightVelocity = right * Vector2.Dot(_rigidbody.velocity, right);
+
+        var velocityVsUp = Vector2.Dot(transform.up, _rigidbody.velocity);
+
         _rigidbody.velocity = forwardVelocity + rightVelocity * driftFactor;
     }
 
