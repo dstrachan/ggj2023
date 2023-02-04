@@ -32,10 +32,11 @@ public class CarController : MonoBehaviour
         _rigidbody.drag = _accelerationInput == 0 ? Mathf.Lerp(_rigidbody.drag, 3f, Time.fixedDeltaTime * 3) : 0;
 
         var velocityVsUp = Vector2.Dot(transform.up, _rigidbody.velocity);
-
         if (velocityVsUp > maxSpeed && _accelerationInput > 0) return;
         if (velocityVsUp < -maxSpeed * 0.5f && _accelerationInput < 0) return;
         if (_rigidbody.velocity.sqrMagnitude > maxSpeed * maxSpeed && _accelerationInput > 0) return;
+        
+        print(_rigidbody.velocity);
 
         var engineForceVector = transform.up * (_accelerationInput * accelerationFactor);
         _rigidbody.AddForce(engineForceVector, ForceMode2D.Force);
@@ -43,15 +44,16 @@ public class CarController : MonoBehaviour
 
     private void ApplySteering()
     {
-        var minSpeedBeforeAllowTurningFactor = Mathf.Clamp01(_rigidbody.velocity.magnitude / 8);
-        _rotationAngle -= _steeringInput * turnFactor * minSpeedBeforeAllowTurningFactor;
+        _rotationAngle -= _steeringInput * turnFactor * Mathf.Clamp01(_rigidbody.velocity.magnitude / 8);
         _rigidbody.MoveRotation(_rotationAngle);
     }
 
     private void KillOrthogonalVelocity()
     {
-        var forwardVelocity = Vector2.up * Vector2.Dot(_rigidbody.velocity, Vector2.up);
-        var rightVelocity = Vector2.right * Vector2.Dot(_rigidbody.velocity, Vector2.right);
+        var up = transform.up;
+        Vector2 forwardVelocity = up * Vector2.Dot(_rigidbody.velocity, up);
+        var right = transform.right;
+        Vector2 rightVelocity = right * Vector2.Dot(_rigidbody.velocity, right);
         _rigidbody.velocity = forwardVelocity + rightVelocity * driftFactor;
     }
 
