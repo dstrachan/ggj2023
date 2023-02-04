@@ -17,6 +17,9 @@ public class CarDrift : MonoBehaviour
         var right = transform.right;
         Vector2 rightVelocity = right * Vector2.Dot(_rigidbody.velocity, right);
         
-        print(rightVelocity.magnitude);
+        if (rightVelocity.magnitude > 5)
+        {
+            print(rightVelocity.magnitude);
+        }
     }
 }
