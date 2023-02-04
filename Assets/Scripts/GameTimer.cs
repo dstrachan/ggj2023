@@ -25,11 +25,12 @@ public class GameTimer : MonoBehaviour
         }
 
         remaining_time = Mathf.Max(0.0f, remaining_time - Time.deltaTime);
-        timer_text.text = remaining_time.ToString("n0");
+        timer_text.text = Mathf.Ceil(remaining_time).ToString("n0");
     }
 
     void GameOver()
     {
         Debug.Log("Game Over!");
+        this.enabled = false;
     }
 }
