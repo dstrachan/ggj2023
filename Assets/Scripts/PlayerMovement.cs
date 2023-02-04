@@ -20,6 +20,4 @@ public class PlayerMovement : MonoBehaviour
     {
         _movement = value.Get<Vector2>();
     }
-    
-    
 }
