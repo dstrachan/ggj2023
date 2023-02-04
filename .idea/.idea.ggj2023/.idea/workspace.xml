@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/Assets/Inputs/PlayerInputs.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inputs/PlayerInputs.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Gravel32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Gravel32.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Road_B.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Road_B.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Road_L.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Road_L.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Road_R.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Road_R.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Road_T.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/Road_T.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/TilePalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/TilePalette.prefab" afterDir="false" />
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="scene update">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +14,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,8 +80,23 @@
       <option name="presentableId" value="Default" />
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
-      <workItem from="1675537805262" duration="1246000" />
+      <workItem from="1675537805262" duration="2431000" />
     </task>
+    <task id="LOCAL-00001" summary="update tiles and double road width">
+      <created>1675540943882</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675540943882</updated>
+    </task>
+    <task id="LOCAL-00002" summary="scene update">
+      <created>1675541486263</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675541486263</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +117,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="update tiles and double road width" />
+    <MESSAGE value="scene update" />
+    <option name="LAST_COMMIT_MESSAGE" value="scene update" />
   </component>
 </project>
