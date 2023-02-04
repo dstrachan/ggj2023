@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 public class CarController : MonoBehaviour
 {
-    [SerializeField] private float driftFactor = 0.5f;
-    [SerializeField] private float accelerationFactor = 15f;
+    [SerializeField] private float driftFactor = 0.2f;
+    [SerializeField] private float accelerationFactor = 7.5f;
     [SerializeField] private float turnFactor = 3.5f;
     [SerializeField] private float maxSpeed = 10f;
 
@@ -36,8 +36,6 @@ public class CarController : MonoBehaviour
         if (velocityVsUp < -maxSpeed * 0.5f && _accelerationInput < 0) return;
         if (_rigidbody.velocity.sqrMagnitude > maxSpeed * maxSpeed && _accelerationInput > 0) return;
         
-        print(_rigidbody.velocity);
-
         var engineForceVector = transform.up * (_accelerationInput * accelerationFactor);
         _rigidbody.AddForce(engineForceVector, ForceMode2D.Force);
     }
