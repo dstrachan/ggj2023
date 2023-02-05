@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,23 +7,21 @@ public class BottleUI : MonoBehaviour
     public Image bottle;
     public Image bottleGlow;
     public Sprite redBottle;
-    public Sprite greenBottle;
     public Sprite blueBottle;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        SetColour(BottleColor.Blue);
-    }
-
+    public Sprite greenBottle;
+    public Sprite pinkBottle;
+    public Sprite yellowBottle;
 
     public void SetColour(BottleColor bc)
     {
         bottle.sprite = bc switch
         {
-            BottleColor.Green => greenBottle,
             BottleColor.Red => redBottle,
-            BottleColor.Blue => blueBottle
+            BottleColor.Blue => blueBottle,
+            BottleColor.Green => greenBottle,
+            BottleColor.Pink => pinkBottle,
+            BottleColor.Yellow => yellowBottle,
+            _ => throw new ArgumentOutOfRangeException(nameof(bc), bc, null)
         };
     }
 

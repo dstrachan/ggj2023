@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1411066965992817702
+--- !u!1001 &1439655168911289588
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,6 +10,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6314048724596960797, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
       propertyPath: bottleColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965383928845752225, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
+      propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7965383928845752225, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
@@ -18,11 +22,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7965383928845752225, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7965383930102763350, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
       propertyPath: m_Name
-      value: Drop-off Node - Blue
+      value: Drop-off Node - Pink
       objectReference: {fileID: 0}
     - target: {fileID: 7965383930102763351, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
       propertyPath: m_RootOrder

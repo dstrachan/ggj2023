@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 45.6175, y: 151.4203}
+  m_SizeDelta: {x: 20, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8102814289904401164
 CanvasRenderer:
@@ -59,14 +59,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.90972906, b: 0.0047169924, a: 0.8666667}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8666667}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46d6ab8f7f4ece74e934bf189600aa6f, type: 3}
+  m_Sprite: {fileID: 1101535105, guid: 19fa32139a02e6a4496fcd9768c48a6c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -138,9 +138,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bottle: {fileID: 8102814291487380085}
   bottleGlow: {fileID: 8102814289904401155}
-  redBottle: {fileID: 21300000, guid: eaed3d29abd178f49af0fbbc7aff3ffe, type: 3}
-  greenBottle: {fileID: 21300000, guid: ef631b73d997ed74792d5898b6bd723a, type: 3}
-  blueBottle: {fileID: 21300000, guid: eb2b4e706bad0c7458f51367a8329643, type: 3}
+  redBottle: {fileID: -413982748, guid: 19fa32139a02e6a4496fcd9768c48a6c, type: 3}
+  blueBottle: {fileID: 1938774138, guid: 19fa32139a02e6a4496fcd9768c48a6c, type: 3}
+  greenBottle: {fileID: -621460255, guid: 19fa32139a02e6a4496fcd9768c48a6c, type: 3}
+  pinkBottle: {fileID: -286385825, guid: 19fa32139a02e6a4496fcd9768c48a6c, type: 3}
+  yellowBottle: {fileID: 526470115, guid: 19fa32139a02e6a4496fcd9768c48a6c, type: 3}
 --- !u!1 &8102814291487380075
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +179,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 35, y: 136}
+  m_SizeDelta: {x: 16, y: 68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8102814291487380086
 CanvasRenderer:
@@ -207,7 +209,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eaed3d29abd178f49af0fbbc7aff3ffe, type: 3}
+  m_Sprite: {fileID: -413982748, guid: 19fa32139a02e6a4496fcd9768c48a6c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
