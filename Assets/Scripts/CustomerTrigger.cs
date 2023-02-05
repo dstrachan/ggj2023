@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class CustomerTrigger : MonoBehaviour
 {
-    [SerializeField] private BottleColor bottleColor;
-    
     [SerializeField] private Sprite redBubble;
     [SerializeField] private Sprite blueBubble;
     [SerializeField] private Sprite greenBubble;
@@ -20,15 +18,36 @@ public class CustomerTrigger : MonoBehaviour
     [SerializeField] private SpriteRenderer bubbleRenderer;
     [SerializeField] private SpriteRenderer labelRenderer;
 
-    private bool wantsRootBeer = true;
+    private bool _wantsRootBeer = true;
+    private BottleColor _bottleColor;
 
-    private void Start()
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        SetSprite();
+        if (_wantsRootBeer && col.gameObject.CompareTag("Car"))
+        {
+            var carInventory = col.gameObject.GetComponent<CarInventory>();
+            if (carInventory.IsEmpty)
+            {
+                print("CAR IS EMPTY, GO TO THE FACTORY FOR MORE BOTTLES!");
+                return;
+            }
+
+            print("UNLOADING CAR");
+            if (carInventory.TryRemoveBottle(_bottleColor))
+            {
+                print($"UNLOADED {_bottleColor} BOTTLE");
+                FulfillDemand();
+            }
+            else
+            {
+                print($"OH NO! INVALID BOTTLE COLOR");
+            }
+        }
     }
 
-    private void SetSprite()
+    public void SetDemand(BottleColor bottleColor)
     {
+        _bottleColor = bottleColor;
         (bubbleRenderer.sprite, labelRenderer.sprite) = bottleColor switch
         {
             BottleColor.Red => (redBubble, redLabel),
@@ -39,34 +58,10 @@ public class CustomerTrigger : MonoBehaviour
             _ => throw new ArgumentOutOfRangeException()
         };
     }
-    
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (wantsRootBeer && col.gameObject.CompareTag("Car"))
-        {
-            var carInventory = col.gameObject.GetComponent<CarInventory>();
-            if (carInventory.IsEmpty)
-            {
-                print("CAR IS EMPTY, GO TO THE FACTORY FOR MORE BOTTLES!");
-                return;
-            }
-
-            print("UNLOADING CAR");
-            if (carInventory.TryRemoveBottle(bottleColor))
-            {
-                print($"UNLOADED {bottleColor} BOTTLE");
-                FulfillDemand();
-            }
-            else
-            {
-                print($"OH NO! INVALID BOTTLE COLOR");
-            }
-        }
-    }
 
     private void FulfillDemand()
     {
-        wantsRootBeer = false;
+        _wantsRootBeer = false;
         bubbleRenderer.enabled = false;
         labelRenderer.enabled = false;
     }

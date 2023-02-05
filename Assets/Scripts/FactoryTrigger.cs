@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 public class FactoryTrigger : MonoBehaviour
 {
     [SerializeField] private int maxBottles = 5;
-    [SerializeField] private GameObject[] customerPrefabs;
+    [SerializeField] private GameObject customerPrefab;
     [SerializeField] private Tilemap customersTilemap;
     [SerializeField] private Tilemap groundTilemap;
 
@@ -102,9 +102,9 @@ public class FactoryTrigger : MonoBehaviour
         {
             var spawnerPositions = _spawnerPositions[index];
             var spawnerIndex = _random.Next(spawnerPositions.Length);
-            var prefab = customerPrefabs[i % customerPrefabs.Length];
             Destroy(_customers[index]);
-            _customers[index] = Instantiate(prefab, spawnerPositions[spawnerIndex], Quaternion.identity);
+            _customers[index] = Instantiate(customerPrefab, spawnerPositions[spawnerIndex], Quaternion.identity);
+            _customers[index].GetComponent<CustomerTrigger>().SetDemand((BottleColor)(i % EnumCount));
             i += 1;
         }
     }
