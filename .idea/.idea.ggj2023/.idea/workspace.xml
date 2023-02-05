@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="add some more sounds" />
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="fix car prefab">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarEngine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarEngine.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
-      <workItem from="1675537805262" duration="10328000" />
+      <workItem from="1675537805262" duration="10742000" />
     </task>
     <task id="LOCAL-00001" summary="update tiles and double road width">
       <created>1675540943882</created>
@@ -165,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675559806469</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix car prefab">
+      <created>1675560051881</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675560051881</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +211,7 @@
     <MESSAGE value="merge" />
     <MESSAGE value="add settings for how easy it is to trigger drift effects" />
     <MESSAGE value="add some more sounds" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some more sounds" />
+    <MESSAGE value="fix car prefab" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix car prefab" />
   </component>
 </project>

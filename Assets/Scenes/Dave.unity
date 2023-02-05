@@ -3677,6 +3677,71 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1001 &1045009324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2299507290757788326, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_Name
+      value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788327, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_Volume
+      value: 0.114
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
 --- !u!1 &1052570486
 GameObject:
   m_ObjectHideFlags: 0
@@ -41937,6 +42002,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &2088475674 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 291937281, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
+  m_PrefabInstance: {fileID: 5401867541160598452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5401867541160598452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41945,6 +42015,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 547972671, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
+      propertyPath: minDriftSpeedForEffects
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5401867541133459688, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -42009,6 +42083,10 @@ PrefabInstance:
       propertyPath: driftFactor
       value: 0.95
       objectReference: {fileID: 0}
+    - target: {fileID: 5401867541133459691, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
+      propertyPath: engineSound
+      value: 
+      objectReference: {fileID: 2088475674}
     - target: {fileID: 5401867541133459691, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
       propertyPath: accelerationFactor
       value: 2.5
