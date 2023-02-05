@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="new map" />
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="more scene corrections">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mg.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mg.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
-      <workItem from="1675537805262" duration="13516000" />
+      <workItem from="1675537805262" duration="13923000" />
     </task>
     <task id="LOCAL-00001" summary="update tiles and double road width">
       <created>1675540943882</created>
@@ -198,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675566194591</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="scene">
+      <created>1675566434304</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675566434304</updated>
+    </task>
+    <task id="LOCAL-00018" summary="more scene corrections">
+      <created>1675566742555</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675566742555</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +253,8 @@
     <MESSAGE value="some tweaks to car values" />
     <MESSAGE value="car changes, new tiles" />
     <MESSAGE value="new map" />
-    <option name="LAST_COMMIT_MESSAGE" value="new map" />
+    <MESSAGE value="scene" />
+    <MESSAGE value="more scene corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="more scene corrections" />
   </component>
 </project>
