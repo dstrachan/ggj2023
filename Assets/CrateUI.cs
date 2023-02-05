@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,13 @@ public class CrateUI : MonoBehaviour
         CarInventory.OnBottlesChanged += UpdateBottleUI;
         CarInventory.OnBottlesChanged += CheckForRefills;
     }
+
+    private void OnDestroy()
+    {
+        CarInventory.OnBottlesChanged -= UpdateBottleUI;
+        CarInventory.OnBottlesChanged -= CheckForRefills;
+    }
+
     private void UpdateBottleUI(List<Bottle> bottles)
     {
         var totalBottles = bottles.Count;
