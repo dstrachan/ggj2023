@@ -306,6 +306,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Gamepad",
+                    "id": "b367d359-5fd2-46e1-b203-cff462495d3f",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Steer",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "0cd7de2f-6e91-4173-b909-dcf4274c7fe9",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Steer",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "1aea0c19-e106-4c5c-ab19-549f6621b52d",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Steer",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "Keyboard",
                     "id": "40057b24-bd50-45d0-af03-dc22c2de8cd6",
                     "path": "1DAxis",
@@ -322,7 +355,7 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -339,8 +372,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "1D Axis",
-                    "id": "cf8059a1-c5ac-499a-be96-56161a7f069d",
+                    "name": "Gamepad",
+                    "id": "fdabd37f-f936-4d6f-bd5d-1f3d799c6d0a",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -351,22 +384,22 @@
                 },
                 {
                     "name": "negative",
-                    "id": "8771d96b-9368-4358-8e2b-987729c3988b",
-                    "path": "",
+                    "id": "ae130534-807c-47ea-9486-0ac4a7d09e3a",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "positive",
-                    "id": "8de2ea13-19b1-40f1-b1bf-cbedffcdc2bb",
-                    "path": "",
+                    "id": "190d6717-a17c-48f2-9669-7d9bb761ce70",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": true
