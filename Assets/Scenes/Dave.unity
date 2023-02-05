@@ -530,6 +530,7 @@ MonoBehaviour:
   - {fileID: 9016109244040809328, guid: 476d75a6ae0d77f4f85dd2537d30a32d, type: 3}
   - {fileID: 9016109244040809328, guid: 253584c8e46636043a9eb3904bcc9e4c, type: 3}
   customersTilemap: {fileID: 715349259}
+  groundTilemap: {fileID: 1503895673}
 --- !u!66 &346504972
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -41450,7 +41451,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 5.625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
