@@ -15,6 +15,7 @@ public class CarInventory : MonoBehaviour
     private void Start()
     {
         _bottles = new Stack<Bottle>();
+        OnBottlesChanged?.Invoke(_bottles.ToList());
         print("You have 0 bottles");
     }
 
