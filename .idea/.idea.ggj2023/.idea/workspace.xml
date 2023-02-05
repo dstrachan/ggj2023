@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="start menu" />
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="scene">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ImageAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ImageAnimation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Loading.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Loading.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartGameAuto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartGameAuto.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +24,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00fa870ef8304f49b022858f9fc523a3c400/f3/6fb3d433/VisualEffect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@14.0.6/Runtime/Debugging/DebugFrameTiming.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/GraphicEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualeffectgraph@14.0.6/Editor/GraphView/VFXViewWindow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Framework/Events/Lifecycle/Start.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -83,7 +92,7 @@
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
       <workItem from="1675537805262" duration="14963000" />
-      <workItem from="1675594736736" duration="6713000" />
+      <workItem from="1675594736736" duration="7898000" />
     </task>
     <task id="LOCAL-00001" summary="update tiles and double road width">
       <created>1675540943882</created>
@@ -274,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675602533998</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="scene">
+      <created>1675602895367</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1675602895367</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +327,6 @@
     <MESSAGE value="some tweaks to car values" />
     <MESSAGE value="car changes, new tiles" />
     <MESSAGE value="new map" />
-    <MESSAGE value="scene" />
     <MESSAGE value="more scene corrections" />
     <MESSAGE value="more tile corrections" />
     <MESSAGE value="Add start screen and retry" />
@@ -322,6 +337,7 @@
     <MESSAGE value="apply some prefabs" />
     <MESSAGE value="refill volume" />
     <MESSAGE value="start menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="start menu" />
+    <MESSAGE value="scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="scene" />
   </component>
 </project>
