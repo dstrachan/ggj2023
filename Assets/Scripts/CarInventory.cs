@@ -1,13 +1,16 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+
+public delegate void InventoryChangedEventHandler(List<Bottle> bottles);
 
 public class CarInventory : MonoBehaviour
 {
     public bool IsEmpty => _bottles.Count == 0;
 
     private Stack<Bottle> _bottles;
+
+    public static event InventoryChangedEventHandler OnBottlesChanged;
 
     private void Start()
     {
@@ -22,6 +25,7 @@ public class CarInventory : MonoBehaviour
             Color = bottleColor
         });
         print($"You have {_bottles.Count} bottles, next is {bottleColor}");
+        OnBottlesChanged?.Invoke(_bottles.ToList());
     }
 
     public bool TryRemoveBottle(BottleColor bottleColor)
@@ -38,6 +42,7 @@ public class CarInventory : MonoBehaviour
                 print($"You have 0 bottles, go to the factory to get more!");
             }
 
+            OnBottlesChanged?.Invoke(_bottles.ToList());
             return true;
         }
 

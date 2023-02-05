@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-public class DropOffPoint : MonoBehaviour
+public class CustomerTrigger : MonoBehaviour
 {
     [SerializeField] private BottleColor bottleColor;
 
