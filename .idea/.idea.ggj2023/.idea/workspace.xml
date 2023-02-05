@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="add settings for how easy it is to trigger drift effects">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarDrift.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarDrift.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/breakbeats3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/breakbeats3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/breakbeats3.mp3.asd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/breakbeats3.mp3.asd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="add some more sounds" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
-      <workItem from="1675537805262" duration="9980000" />
+      <workItem from="1675537805262" duration="10328000" />
     </task>
     <task id="LOCAL-00001" summary="update tiles and double road width">
       <created>1675540943882</created>
@@ -166,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675557407737</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add some more sounds">
+      <created>1675559806469</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675559806469</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +199,7 @@
     <MESSAGE value="drifty car" />
     <MESSAGE value="merge" />
     <MESSAGE value="add settings for how easy it is to trigger drift effects" />
-    <option name="LAST_COMMIT_MESSAGE" value="add settings for how easy it is to trigger drift effects" />
+    <MESSAGE value="add some more sounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some more sounds" />
   </component>
 </project>
