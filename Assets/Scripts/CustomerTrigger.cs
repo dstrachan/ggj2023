@@ -1,10 +1,9 @@
 using System;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class CustomerTrigger : MonoBehaviour
 {
-    [SerializeField] private BottleColor bottleColor;
-    
     [SerializeField] private Sprite redBubble;
     [SerializeField] private Sprite blueBubble;
     [SerializeField] private Sprite greenBubble;
@@ -20,15 +19,53 @@ public class CustomerTrigger : MonoBehaviour
     [SerializeField] private SpriteRenderer bubbleRenderer;
     [SerializeField] private SpriteRenderer labelRenderer;
 
-    private bool wantsRootBeer = true;
+    [SerializeField] private VisualEffect fireworks;
+    [SerializeField] private AudioSource successSound;
 
-    private void Start()
+    private bool _wantsRootBeer = true;
+    private BottleColor _bottleColor;
+
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        SetSprite();
+        if (_wantsRootBeer && col.gameObject.CompareTag("Car"))
+        {
+            var carInventory = col.gameObject.GetComponent<CarInventory>();
+            if (carInventory.IsEmpty)
+            {
+                print("CAR IS EMPTY, GO TO THE FACTORY FOR MORE BOTTLES!");
+                return;
+            }
+
+            print("UNLOADING CAR");
+            if (carInventory.TryRemoveBottle(_bottleColor))
+            {
+                print($"UNLOADED {_bottleColor} BOTTLE");
+                FulfillDemand();
+            }
+            else
+            {
+                print($"OH NO! INVALID BOTTLE COLOR");
+            }
+        }
     }
 
-    private void SetSprite()
+    public void SetDemand(BottleColor bottleColor)
     {
+        _bottleColor = bottleColor;
+        
+    
+        var effectColor = bottleColor switch
+        {
+            BottleColor.Red => new Vector4(5,0,0,0),
+            BottleColor.Blue => new Vector4(2,1,5,0),
+            BottleColor.Green => new Vector4(0,5,0,0),
+            BottleColor.Pink => new Vector4(5,0,5,0),
+            BottleColor.Yellow => new Vector4(5,5,0,0),
+            _ => throw new ArgumentOutOfRangeException()
+        };
+        
+        fireworks.SetVector4("MainColor", effectColor);
+
         (bubbleRenderer.sprite, labelRenderer.sprite) = bottleColor switch
         {
             BottleColor.Red => (redBubble, redLabel),
@@ -39,35 +76,14 @@ public class CustomerTrigger : MonoBehaviour
             _ => throw new ArgumentOutOfRangeException()
         };
     }
-    
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (wantsRootBeer && col.gameObject.CompareTag("Car"))
-        {
-            var carInventory = col.gameObject.GetComponent<CarInventory>();
-            if (carInventory.IsEmpty)
-            {
-                print("CAR IS EMPTY, GO TO THE FACTORY FOR MORE BOTTLES!");
-                return;
-            }
-
-            print("UNLOADING CAR");
-            if (carInventory.TryRemoveBottle(bottleColor))
-            {
-                print($"UNLOADED {bottleColor} BOTTLE");
-                FulfillDemand();
-            }
-            else
-            {
-                print($"OH NO! INVALID BOTTLE COLOR");
-            }
-        }
-    }
 
     private void FulfillDemand()
     {
-        wantsRootBeer = false;
+        _wantsRootBeer = false;
         bubbleRenderer.enabled = false;
         labelRenderer.enabled = false;
+        
+        successSound.PlayOneShot(successSound.clip);
+        fireworks.Play();
     }
 }

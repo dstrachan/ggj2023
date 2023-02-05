@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -70,14 +71,11 @@ public class CarController : MonoBehaviour
     private void ApplySteering()
     {
         var velocityVsUp = Vector2.Dot(transform.up, _rigidbody.velocity);
-        if(Mathf.Abs(velocityVsUp) < turnBuildupThreshold)
-        {
-            _rotationAngle -= _steeringInput * turnFactor * (Mathf.Abs(velocityVsUp) / turnBuildupThreshold);
-        }
-        else
-        {
-            _rotationAngle -= _steeringInput * turnFactor;
-        }
+        var rotationAngle = _steeringInput * turnFactor * (Math.Abs(velocityVsUp) < turnBuildupThreshold
+            ? Mathf.Abs(velocityVsUp) / turnBuildupThreshold
+            : 1);
+        var isReversing = _accelerationInput < 0 && velocityVsUp < 0;
+        _rotationAngle -= isReversing ? -rotationAngle : rotationAngle;
 
         _rigidbody.MoveRotation(_rotationAngle);
     }

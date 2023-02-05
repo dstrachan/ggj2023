@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="more scene corrections">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mg.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mg.unity" afterDir="false" />
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="apply some prefabs">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomerTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomerTrigger.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,19 +17,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00fa870ef8304f49b022858f9fc523a3c400/f3/6fb3d433/VisualEffect.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@14.0.6/Runtime/Debugging/DebugFrameTiming.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualeffectgraph@14.0.6/Editor/GraphView/VFXViewWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Framework/Events/Lifecycle/Start.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LGls5rAZ243XRBF6v9ISqVwcdD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -86,7 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
-      <workItem from="1675537805262" duration="13923000" />
+      <workItem from="1675537805262" duration="14963000" />
+      <workItem from="1675594736736" duration="5558000" />
     </task>
     <task id="LOCAL-00001" summary="update tiles and double road width">
       <created>1675540943882</created>
@@ -214,7 +213,56 @@
       <option name="project" value="LOCAL" />
       <updated>1675566742555</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="more tile corrections">
+      <created>1675567190116</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675567190116</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add start screen and retry">
+      <created>1675596991421</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675596991422</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix some ui things">
+      <created>1675597067714</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1675597067714</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fix scaling issues in scene">
+      <created>1675597233518</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1675597233518</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix some loading issues">
+      <created>1675598295198</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1675598295198</updated>
+    </task>
+    <task id="LOCAL-00024" summary="effects">
+      <created>1675601195812</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1675601195812</updated>
+    </task>
+    <task id="LOCAL-00025" summary="apply some prefabs">
+      <created>1675601292581</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1675601292581</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +287,6 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="update tiles and double road width" />
     <MESSAGE value="scene update" />
-    <MESSAGE value="more tile corrections" />
     <MESSAGE value="vfx" />
     <MESSAGE value="fix scene" />
     <MESSAGE value="exhast effect" />
@@ -255,6 +302,13 @@
     <MESSAGE value="new map" />
     <MESSAGE value="scene" />
     <MESSAGE value="more scene corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="more scene corrections" />
+    <MESSAGE value="more tile corrections" />
+    <MESSAGE value="Add start screen and retry" />
+    <MESSAGE value="fix some ui things" />
+    <MESSAGE value="fix scaling issues in scene" />
+    <MESSAGE value="fix some loading issues" />
+    <MESSAGE value="effects" />
+    <MESSAGE value="apply some prefabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="apply some prefabs" />
   </component>
 </project>

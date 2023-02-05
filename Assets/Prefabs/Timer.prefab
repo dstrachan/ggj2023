@@ -26,11 +26,11 @@ Transform:
   m_GameObject: {fileID: 8856211957655782664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1083.5463, y: 763.5299, z: 6.8993616}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8856211957655782665
 MonoBehaviour:
@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 246f4117138bd3249bb2680c5758f8bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  total_time: 60
+  total_time: 80
   timer_text: {fileID: 0}
+  gameOverMenu: {fileID: 0}
+  gameOverBackground: {fileID: 0}
