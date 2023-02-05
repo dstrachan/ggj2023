@@ -39,6 +39,10 @@ public class CarController : MonoBehaviour
         {
             engineSound.pitch = 1 * (1 + _rigidbody.velocity.magnitude/maxSpeed);
         }
+        else
+        {
+            engineSound.pitch = 1;
+        }
     }
 
     private void ApplyEngineForce()
