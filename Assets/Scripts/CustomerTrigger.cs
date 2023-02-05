@@ -1,12 +1,48 @@
+using System;
 using UnityEngine;
 
 public class CustomerTrigger : MonoBehaviour
 {
     [SerializeField] private BottleColor bottleColor;
+    
+    [SerializeField] private Sprite redBubble;
+    [SerializeField] private Sprite blueBubble;
+    [SerializeField] private Sprite greenBubble;
+    [SerializeField] private Sprite pinkBubble;
+    [SerializeField] private Sprite yellowBubble;
+    
+    [SerializeField] private Sprite redLabel;
+    [SerializeField] private Sprite blueLabel;
+    [SerializeField] private Sprite greenLabel;
+    [SerializeField] private Sprite pinkLabel;
+    [SerializeField] private Sprite yellowLabel;
 
+    [SerializeField] private SpriteRenderer bubbleRenderer;
+    [SerializeField] private SpriteRenderer labelRenderer;
+
+    private bool wantsRootBeer = true;
+
+    private void Start()
+    {
+        SetSprite();
+    }
+
+    private void SetSprite()
+    {
+        (bubbleRenderer.sprite, labelRenderer.sprite) = bottleColor switch
+        {
+            BottleColor.Red => (redBubble, redLabel),
+            BottleColor.Blue => (blueBubble, blueLabel),
+            BottleColor.Green => (greenBubble, greenLabel),
+            BottleColor.Pink => (pinkBubble, pinkLabel),
+            BottleColor.Yellow => (yellowBubble, yellowLabel),
+            _ => throw new ArgumentOutOfRangeException()
+        };
+    }
+    
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Car"))
+        if (wantsRootBeer && col.gameObject.CompareTag("Car"))
         {
             var carInventory = col.gameObject.GetComponent<CarInventory>();
             if (carInventory.IsEmpty)
@@ -19,11 +55,19 @@ public class CustomerTrigger : MonoBehaviour
             if (carInventory.TryRemoveBottle(bottleColor))
             {
                 print($"UNLOADED {bottleColor} BOTTLE");
+                FulfillDemand();
             }
             else
             {
                 print($"OH NO! INVALID BOTTLE COLOR");
             }
         }
+    }
+
+    private void FulfillDemand()
+    {
+        wantsRootBeer = false;
+        bubbleRenderer.enabled = false;
+        labelRenderer.enabled = false;
     }
 }
