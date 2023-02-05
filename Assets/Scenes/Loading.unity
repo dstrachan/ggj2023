@@ -260,7 +260,7 @@ MonoBehaviour:
   - {fileID: -2137203703, guid: c22b3c67e8f9ea2499b491f1faedeb16, type: 3}
   - {fileID: -1555413997, guid: c22b3c67e8f9ea2499b491f1faedeb16, type: 3}
   - {fileID: -1701415600, guid: c22b3c67e8f9ea2499b491f1faedeb16, type: 3}
-  spritePerFrame: 30
+  frameTimeSeconds: 0.1
   loop: 1
   destroyOnEnd: 0
 --- !u!1 &702478910

@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="once don't refill">
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="better menu">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Loading.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Loading.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ImageAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ImageAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/THE_ROOT_ROUTE.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/THE_ROOT_ROUTE.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +93,7 @@
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
       <workItem from="1675537805262" duration="14963000" />
-      <workItem from="1675594736736" duration="9478000" />
+      <workItem from="1675594736736" duration="10501000" />
     </task>
     <task id="LOCAL-00001" summary="update tiles and double road width">
       <created>1675540943882</created>
@@ -300,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675604810632</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="better menu">
+      <created>1675606052876</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1675606052876</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +335,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix scene" />
     <MESSAGE value="exhast effect" />
     <MESSAGE value="rename vfx" />
     <MESSAGE value="starting more vfx" />
@@ -348,6 +359,7 @@
     <MESSAGE value="scene" />
     <MESSAGE value="add loading screen" />
     <MESSAGE value="once don't refill" />
-    <option name="LAST_COMMIT_MESSAGE" value="once don't refill" />
+    <MESSAGE value="better menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="better menu" />
   </component>
 </project>
