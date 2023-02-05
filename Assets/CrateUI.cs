@@ -10,7 +10,8 @@ public class CrateUI : MonoBehaviour
     public CarInventory carInventory;
     public List<BottleUI> bottleUIs;
     public AudioSource checkForRefillAudio;
-    
+
+    private bool once;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +53,12 @@ public class CrateUI : MonoBehaviour
 
     private void CheckForRefills(List<Bottle> bottles)
     {
+        if (!once)
+        {
+            once = true;
+            return;
+        }
+        
         if(bottles.Count == 0)
         {
             checkForRefillAudio.Play();
