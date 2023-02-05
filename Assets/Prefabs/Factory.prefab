@@ -397,12 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxBottles: 5
-  customerPrefabs:
-  - {fileID: 7817365459367251973, guid: 92407e97c94650a48ba0ed8579f2a482, type: 3}
-  - {fileID: 9016109244040809328, guid: 253584c8e46636043a9eb3904bcc9e4c, type: 3}
-  - {fileID: 9016109244040809328, guid: 476d75a6ae0d77f4f85dd2537d30a32d, type: 3}
-  - {fileID: 9038747288396260258, guid: b7a71358e1abdc244bec12c6b7e68cc8, type: 3}
-  - {fileID: 893490154494593325, guid: 8d74b40e300362e4b88396a25c1a57dd, type: 3}
+  customerPrefab: {fileID: 7965383930102763350, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
   customersTilemap: {fileID: 0}
   groundTilemap: {fileID: 0}
 --- !u!50 &5604220978670685487
