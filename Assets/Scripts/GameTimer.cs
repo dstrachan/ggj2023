@@ -1,22 +1,27 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class GameTimer : MonoBehaviour
 {
-
-    public float total_time = 60.0f;
+    [SerializeField] private float startingTime = 60f;
+    [SerializeField] private float secondsPerRefill = 20f;
     private float remaining_time;
     public TextMeshProUGUI timer_text;
 
     public GameObject gameOverMenu;
     public GameObject gameOverBackground;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        remaining_time = total_time;
+        remaining_time = startingTime;
+        CarInventory.OnBottlesChanged += OnBottlesChanged;
+    }
+    
+    private void OnDestroy()
+    {
+        CarInventory.OnBottlesChanged -= OnBottlesChanged;
     }
 
     // Update is called once per frame
@@ -32,10 +37,16 @@ public class GameTimer : MonoBehaviour
     }
 
     void GameOver()
-    {   
+    {
         gameOverBackground.SetActive(true);
         gameOverMenu.SetActive(true);
-     
-        this.enabled = false;
+
+        enabled = false;
+    }
+
+    private void OnBottlesChanged(List<Bottle> bottles)
+    {
+        if (bottles.Count != 5) return;
+        remaining_time += secondsPerRefill;
     }
 }
