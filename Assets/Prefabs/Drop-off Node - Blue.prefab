@@ -10,15 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6314048724596960797, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
       propertyPath: bottleColor
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7965383928845752225, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7965383928845752225, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
-      propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7965383930102763350, guid: 39c357b275f94a94fb07e1e61c9bc5f4, type: 3}
       propertyPath: m_Name

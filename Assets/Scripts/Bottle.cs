@@ -1,8 +1,10 @@
 ﻿public enum BottleColor
 {
     Red,
-    Green,
     Blue,
+    Green,
+    Pink,
+    Yellow,
 }
 
 public class Bottle

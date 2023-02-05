@@ -7,18 +7,24 @@ using UnityEngine.VFX;
 public class CarDrift : MonoBehaviour
 {
 
-    public VisualEffect _dustE; 
-    public VisualEffect _dustW; 
-    public TrailRenderer _trailE; 
-    public TrailRenderer _trailW; 
+    public float minDriftSpeedForEffects = 5f;
+
+    public VisualEffect dustE; 
+    public VisualEffect dustW; 
+    public TrailRenderer trailE; 
+    public TrailRenderer trailW;
+
+    private bool vfxPlaying;
+    
+    public AudioSource driftSound;
     
     private Rigidbody2D _rigidbody;
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
 
-        _trailE.emitting = false;
-        _trailW.emitting = false;
+        trailE.emitting = false;
+        trailW.emitting = false;
     }
 
     private void FixedUpdate()
@@ -26,20 +32,46 @@ public class CarDrift : MonoBehaviour
         var right = transform.right;
         Vector2 rightVelocity = right * Vector2.Dot(_rigidbody.velocity, right);
         
-        if (rightVelocity.magnitude > 5)
+        if (rightVelocity.magnitude > minDriftSpeedForEffects)
         {
-            _dustE.Play();
-            _dustW.Play();
-            _trailE.emitting = true;
-            _trailW.emitting = true;
+            if (!vfxPlaying)
+            {
+                vfxPlaying = true;
+                dustE.Play();
+                dustW.Play();
+            }
+
+            if (!driftSound.isPlaying)
+            {
+                driftSound.Play();
+            }
+
+            trailE.emitting = true;
+            trailW.emitting = true;
         }
         else
         {
-            
-            _dustE.Stop();
-            _dustW.Stop();
-            _trailE.emitting = false;
-            _trailW.emitting = false;
+            if (driftSound.isPlaying)
+            {
+                driftSound.Stop();
+            }
+
+            if (vfxPlaying)
+            {
+                dustE.Stop();
+                dustW.Stop();
+                vfxPlaying = false;
+            }
+
+            if (trailE.emitting)
+            {
+                trailE.emitting = false;
+            }
+
+            if (trailW.emitting)
+            {
+                trailW.emitting = false;
+            }
         }
     }
 }

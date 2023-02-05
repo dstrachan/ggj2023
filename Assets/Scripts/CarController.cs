@@ -14,6 +14,9 @@ public class CarController : MonoBehaviour
 
     [SerializeField] private float turnBuildupThreshold = 2.0f;
 
+    [SerializeField] private AudioSource engineSound;
+
+    
     private float _accelerationInput;
     private float _steeringInput;
 
@@ -31,6 +34,15 @@ public class CarController : MonoBehaviour
         ApplyEngineForce();
         KillOrthogonalVelocity();
         ApplySteering();
+
+        if (_accelerationInput > 0)
+        {
+            engineSound.pitch = 1 * (1 + _rigidbody.velocity.magnitude/maxSpeed);
+        }
+        else
+        {
+            engineSound.pitch = 1;
+        }
     }
 
     private void ApplyEngineForce()
