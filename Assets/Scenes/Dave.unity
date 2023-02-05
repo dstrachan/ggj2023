@@ -155,7 +155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8856211957655782670, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8856211957655782670, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42052,6 +42052,14 @@ PrefabInstance:
     - target: {fileID: 5604220978670685477, guid: 7de3f67c1f4d887498d0da0c438900ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604220978670685481, guid: 7de3f67c1f4d887498d0da0c438900ec, type: 3}
+      propertyPath: maxBottles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604220978670685481, guid: 7de3f67c1f4d887498d0da0c438900ec, type: 3}
+      propertyPath: maxCustomers
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5604220978670685481, guid: 7de3f67c1f4d887498d0da0c438900ec, type: 3}
       propertyPath: groundTilemap
