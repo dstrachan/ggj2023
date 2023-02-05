@@ -11,6 +11,8 @@ public class FactoryTrigger : MonoBehaviour
     [SerializeField] private Tilemap customersTilemap;
     [SerializeField] private Tilemap groundTilemap;
 
+    public AudioSource bottleClink;
+
     private System.Random _random;
     private Vector3[][] _spawnerPositions;
     private GameObject[] _customers;
@@ -44,6 +46,7 @@ public class FactoryTrigger : MonoBehaviour
             }
 
             print("LOADING CAR");
+            bottleClink.Play();
             for (var i = 0; i < maxBottles; i++)
             {
                 var color = (BottleColor)_random.Next(0, EnumCount);
