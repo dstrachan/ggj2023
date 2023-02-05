@@ -4,44 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="drifty car">
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Building_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Building_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Building_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Building_2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Building_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Building_3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_0.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_0.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_1_5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_2_0.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_2_0.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_2_1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_2_1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_2_2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_2_2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_2_3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Building_2_3.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarInventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DropOffPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomerTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DropOffPoint.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomerTrigger.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FactoryTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FactoryTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnDropOffNodes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnDropOffNodes.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/TilePalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/TilePalette.prefab" afterDir="false" />
-    </list>
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="merge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
-      <workItem from="1675537805262" duration="8314000" />
+      <workItem from="1675537805262" duration="8736000" />
     </task>
     <task id="LOCAL-00001" summary="update tiles and double road width">
       <created>1675540943882</created>
@@ -181,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675556643821</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="merge">
+      <created>1675556692155</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675556692155</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +183,7 @@
     <MESSAGE value="rename vfx" />
     <MESSAGE value="starting more vfx" />
     <MESSAGE value="drifty car" />
-    <option name="LAST_COMMIT_MESSAGE" value="drifty car" />
+    <MESSAGE value="merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge" />
   </component>
 </project>

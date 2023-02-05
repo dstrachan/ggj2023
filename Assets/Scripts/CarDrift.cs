@@ -7,10 +7,13 @@ using UnityEngine.VFX;
 public class CarDrift : MonoBehaviour
 {
 
+    public float minDriftSpeedForEffects = 5f;
+
     public VisualEffect _dustE; 
     public VisualEffect _dustW; 
     public TrailRenderer _trailE; 
     public TrailRenderer _trailW; 
+    
     
     private Rigidbody2D _rigidbody;
     private void Start()
@@ -26,7 +29,7 @@ public class CarDrift : MonoBehaviour
         var right = transform.right;
         Vector2 rightVelocity = right * Vector2.Dot(_rigidbody.velocity, right);
         
-        if (rightVelocity.magnitude > 5)
+        if (rightVelocity.magnitude > minDriftSpeedForEffects)
         {
             _dustE.Play();
             _dustW.Play();
