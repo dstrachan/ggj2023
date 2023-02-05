@@ -11,6 +11,7 @@ public class GameTimer : MonoBehaviour
 
     public GameObject gameOverMenu;
     public GameObject gameOverBackground;
+    public GameObject factoryPointer;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,8 @@ public class GameTimer : MonoBehaviour
     {
         gameOverBackground.SetActive(true);
         gameOverMenu.SetActive(true);
+
+        factoryPointer.SetActive(false);
 
         enabled = false;
     }
