@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="some tweaks to car values">
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="car changes, new tiles">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/Vfx_Exhast.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/Vfx_Exhast.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MgTestZone_KeepOut!.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MgTestZone_KeepOut!.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mg.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mg.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/TilePalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/TilePalette.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,10 @@
     <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
-      <workItem from="1675537805262" duration="11981000" />
+      <workItem from="1675537805262" duration="13138000" />
     </task>
     <task id="LOCAL-00001" summary="update tiles and double road width">
       <created>1675540943882</created>
@@ -186,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675560942826</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="car changes, new tiles">
+      <created>1675563229073</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1675563229073</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +231,7 @@
     <MESSAGE value="add some more sounds" />
     <MESSAGE value="fix car prefab" />
     <MESSAGE value="some tweaks to car values" />
-    <option name="LAST_COMMIT_MESSAGE" value="some tweaks to car values" />
+    <MESSAGE value="car changes, new tiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="car changes, new tiles" />
   </component>
 </project>
