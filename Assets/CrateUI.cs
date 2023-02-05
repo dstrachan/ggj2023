@@ -12,6 +12,7 @@ public class CrateUI : MonoBehaviour
     void Start()
     {       
         CarInventory.OnBottlesChanged += UpdateBottleUI;
+        CarInventory.OnBottlesChanged += CheckForRefills;
     }
     private void UpdateBottleUI(List<Bottle> bottles)
     {
@@ -36,6 +37,13 @@ public class CrateUI : MonoBehaviour
         }
 
 
+    }
+
+    private void CheckForRefills(List<Bottle> bottles)
+    {
+        if(bottles.Count == 0){
+            GetComponent<AudioSource>().Play();
+        }
     }
 
 }
