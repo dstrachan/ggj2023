@@ -273,7 +273,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "1D Axis",
+                    "name": "Keyboard",
                     "id": "4dd18269-a230-41f3-b657-9d533ca1b693",
                     "path": "1DAxis",
                     "interactions": "",
@@ -306,7 +306,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "1D Axis",
+                    "name": "Keyboard",
                     "id": "40057b24-bd50-45d0-af03-dc22c2de8cd6",
                     "path": "1DAxis",
                     "interactions": "",
@@ -334,6 +334,39 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "Accelerate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "cf8059a1-c5ac-499a-be96-56161a7f069d",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accelerate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "8771d96b-9368-4358-8e2b-987729c3988b",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accelerate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "8de2ea13-19b1-40f1-b1bf-cbedffcdc2bb",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": true
