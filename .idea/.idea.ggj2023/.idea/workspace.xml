@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="exhast effect" />
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="starting more vfx">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effects/Vfx_Drift.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/Vfx_Drift.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effects/Vfx_Exhast.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/Vfx_Exhast.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dave.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarDrift.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarDrift.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/breakbeats3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/breakbeats3.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/breakbeats3.mp3.asd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/breakbeats3.mp3.asd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/breakbeats3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/breakbeats3.wav.asd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/breakbeats3.wav.asd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/breakbeats3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/smokeburn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/smokeburn.png.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00fa870ef8304f49b022858f9fc523a3c400/f3/6fb3d433/VisualEffect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
@@ -78,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
-      <workItem from="1675537805262" duration="4905000" />
+      <workItem from="1675537805262" duration="8117000" />
     </task>
     <task id="LOCAL-00001" summary="update tiles and double road width">
       <created>1675540943882</created>
@@ -122,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675549441142</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="rename vfx">
+      <created>1675549547836</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675549547836</updated>
+    </task>
+    <task id="LOCAL-00008" summary="starting more vfx">
+      <created>1675551360278</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675551360278</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +179,8 @@
     <MESSAGE value="vfx" />
     <MESSAGE value="fix scene" />
     <MESSAGE value="exhast effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="exhast effect" />
+    <MESSAGE value="rename vfx" />
+    <MESSAGE value="starting more vfx" />
+    <option name="LAST_COMMIT_MESSAGE" value="starting more vfx" />
   </component>
 </project>
