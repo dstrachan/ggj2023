@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="more scene corrections">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mg.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mg.unity" afterDir="false" />
+    <list default="true" id="018ac329-0dbd-4114-88c0-a6f4cbc23f97" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/QuitButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/QuitButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ggj2023/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Timer_Canvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Timer_Canvas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mg.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mg.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,19 +26,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00fa870ef8304f49b022858f9fc523a3c400/f3/6fb3d433/VisualEffect.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Dave.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/Micha/OldBackup/ggj2023/Assets/Scenes/Mg.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualeffectgraph@14.0.6/Editor/GraphView/VFXViewWindow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LGls5rAZ243XRBF6v9ISqVwcdD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -86,7 +91,8 @@
       <option name="presentableId" value="Default" />
       <updated>1675505505356</updated>
       <workItem from="1675505510387" duration="1433000" />
-      <workItem from="1675537805262" duration="13923000" />
+      <workItem from="1675537805262" duration="14963000" />
+      <workItem from="1675594736736" duration="1695000" />
     </task>
     <task id="LOCAL-00001" summary="update tiles and double road width">
       <created>1675540943882</created>
@@ -214,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675566742555</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="more tile corrections">
+      <created>1675567190116</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675567190116</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +252,6 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="update tiles and double road width" />
     <MESSAGE value="scene update" />
-    <MESSAGE value="more tile corrections" />
     <MESSAGE value="vfx" />
     <MESSAGE value="fix scene" />
     <MESSAGE value="exhast effect" />
@@ -255,6 +267,7 @@
     <MESSAGE value="new map" />
     <MESSAGE value="scene" />
     <MESSAGE value="more scene corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="more scene corrections" />
+    <MESSAGE value="more tile corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="more tile corrections" />
   </component>
 </project>
