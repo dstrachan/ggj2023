@@ -8101,7 +8101,7 @@ PrefabInstance:
       objectReference: {fileID: 1373836487}
     - target: {fileID: 8856211957655782665, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
       propertyPath: total_time
-      value: 5
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 8856211957655782665, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
       propertyPath: gameOverMenu
@@ -37458,6 +37458,14 @@ PrefabInstance:
     - target: {fileID: 3108824924683444153, guid: e8e0cd9d88a49894596264e99b71a6ad, type: 3}
       propertyPath: m_Name
       value: RootCrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544664948987799916, guid: e8e0cd9d88a49894596264e99b71a6ad, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 837322e09ed5ed741b231c925f5559e2, type: 3}
+    - target: {fileID: 5544664948987799916, guid: e8e0cd9d88a49894596264e99b71a6ad, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5731089245489045916, guid: e8e0cd9d88a49894596264e99b71a6ad, type: 3}
       propertyPath: m_Pivot.x

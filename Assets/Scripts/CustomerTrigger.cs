@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class CustomerTrigger : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class CustomerTrigger : MonoBehaviour
 
     [SerializeField] private SpriteRenderer bubbleRenderer;
     [SerializeField] private SpriteRenderer labelRenderer;
+
+    [SerializeField] private VisualEffect fireworks;
+    [SerializeField] private AudioSource successSound;
 
     private bool _wantsRootBeer = true;
     private BottleColor _bottleColor;
@@ -48,6 +52,20 @@ public class CustomerTrigger : MonoBehaviour
     public void SetDemand(BottleColor bottleColor)
     {
         _bottleColor = bottleColor;
+        
+    
+        var effectColor = bottleColor switch
+        {
+            BottleColor.Red => new Vector4(5,0,0,0),
+            BottleColor.Blue => new Vector4(0,0,5,0),
+            BottleColor.Green => new Vector4(0,5,0,0),
+            BottleColor.Pink => new Vector4(5,0,5,0),
+            BottleColor.Yellow => new Vector4(5,5,0,0),
+            _ => throw new ArgumentOutOfRangeException()
+        };
+        
+        fireworks.SetVector4("MainColor", effectColor);
+
         (bubbleRenderer.sprite, labelRenderer.sprite) = bottleColor switch
         {
             BottleColor.Red => (redBubble, redLabel),
@@ -64,5 +82,8 @@ public class CustomerTrigger : MonoBehaviour
         _wantsRootBeer = false;
         bubbleRenderer.enabled = false;
         labelRenderer.enabled = false;
+        
+        successSound.PlayOneShot(successSound.clip);
+        fireworks.Play();
     }
 }

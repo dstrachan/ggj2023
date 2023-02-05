@@ -3,15 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class CrateUI : MonoBehaviour
 {
 
     public CarInventory carInventory;
     public List<BottleUI> bottleUIs;
-
+    public AudioSource checkForRefillAudio;
+    
+    
     // Start is called before the first frame update
     void Start()
-    {       
+    {
+        var checkForRefillAudio = GetComponent<AudioSource>();
         CarInventory.OnBottlesChanged += UpdateBottleUI;
         CarInventory.OnBottlesChanged += CheckForRefills;
     }
@@ -49,8 +53,9 @@ public class CrateUI : MonoBehaviour
 
     private void CheckForRefills(List<Bottle> bottles)
     {
-        if(bottles.Count == 0){
-            GetComponent<AudioSource>().Play();
+        if(bottles.Count == 0)
+        {
+            checkForRefillAudio.Play();
         }
     }
 
