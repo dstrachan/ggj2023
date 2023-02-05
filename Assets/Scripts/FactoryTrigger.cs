@@ -11,10 +11,13 @@ public class FactoryTrigger : MonoBehaviour
     [SerializeField] private Tilemap customersTilemap;
     [SerializeField] private Tilemap groundTilemap;
 
+    public AudioSource bottleClink;
+
     private System.Random _random;
     private Vector3[][] _spawnerPositions;
     private GameObject[] _customers;
     private int[] _indices;
+    private Stack<BottleColor> _requiredColors;
 
     private static readonly int EnumCount = Enum.GetValues(typeof(BottleColor)).Length;
 
@@ -24,6 +27,7 @@ public class FactoryTrigger : MonoBehaviour
 
         PopulateTilemapGroupTransforms(customersTilemap);
 
+        _requiredColors = new Stack<BottleColor>();
         _customers = new GameObject[_spawnerPositions.Length];
         _indices = new int[_spawnerPositions.Length];
         for (var i = 0; i < _spawnerPositions.Length; i++)
@@ -44,10 +48,13 @@ public class FactoryTrigger : MonoBehaviour
             }
 
             print("LOADING CAR");
+            _requiredColors.Clear();
+            bottleClink.Play();
             for (var i = 0; i < maxBottles; i++)
             {
                 var color = (BottleColor)_random.Next(0, EnumCount);
                 carInventory.AddBottle(color);
+                _requiredColors.Push(color);
             }
 
             RespawnCustomers();
@@ -115,7 +122,12 @@ public class FactoryTrigger : MonoBehaviour
             var spawnerPositions = _spawnerPositions[index];
             var spawnerIndex = _random.Next(spawnerPositions.Length);
             _customers[index] = Instantiate(customerPrefab, spawnerPositions[spawnerIndex], Quaternion.identity);
-            _customers[index].GetComponent<CustomerTrigger>().SetDemand((BottleColor)(i % EnumCount));
+            if (!_requiredColors.TryPop(out var color))
+            {
+                color = (BottleColor)(i % EnumCount);
+            }
+
+            _customers[index].GetComponent<CustomerTrigger>().SetDemand(color);
             i += 1;
         }
     }
