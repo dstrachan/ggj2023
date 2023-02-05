@@ -119,15 +119,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Press_Play_1
+      name: Press_Quit_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
+        y: 512
         width: 384
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,11 +144,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 384
         width: 384
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,15 +161,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_Play_0
+      name: Press_Quit_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 384
+        y: 640
         width: 384
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,11 +186,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 256
         width: 384
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,6 +198,48 @@ TextureImporter:
       bones: []
       spriteID: c277568856e538446aaee879d0b60623
       internalID: 416599754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Press_Quit_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 384
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63d52c763f00444cbc2a1b8b371e47f
+      internalID: -809136034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Press_Play_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4383f0a764177874fae03620d2a78d24
+      internalID: 289220988
       vertices: []
       indices: 
       edges: []
@@ -213,10 +255,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Press_Play_0: -1564864026
+      Press_Play_5: 289220988
+      Press_Quit_0: -1564864026
       Press_Play_2: 330462686
-      Press_Play_1: -827846592
+      Press_Quit_1: -827846592
       Press_Play_3: 416599754
+      Press_Quit_4: -809136034
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
