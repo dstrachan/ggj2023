@@ -74,8 +74,10 @@ public class CarController : MonoBehaviour
         var rotationAngle = _steeringInput * turnFactor * (Math.Abs(velocityVsUp) < turnBuildupThreshold
             ? Mathf.Abs(velocityVsUp) / turnBuildupThreshold
             : 1);
+
         var isReversing = _accelerationInput < 0 && velocityVsUp < 0;
-        _rotationAngle -= isReversing ? -rotationAngle : rotationAngle;
+        //_rotationAngle -= isReversing ? -rotationAngle : rotationAngle;
+        _rotationAngle -= rotationAngle;
 
         _rigidbody.MoveRotation(_rotationAngle);
     }
