@@ -6,10 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayGame : MonoBehaviour
 {
-
     public void StartGame()
     {
-        SceneManager.LoadSceneAsync("MainGame");
+        SceneManager.LoadScene("Loading");
     }
-    
 }
