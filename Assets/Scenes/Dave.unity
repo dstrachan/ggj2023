@@ -41795,6 +41795,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5604220978670685481, guid: 7de3f67c1f4d887498d0da0c438900ec, type: 3}
+      propertyPath: maxCustomers
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604220978670685481, guid: 7de3f67c1f4d887498d0da0c438900ec, type: 3}
       propertyPath: groundTilemap
       value: 
       objectReference: {fileID: 1503895673}
