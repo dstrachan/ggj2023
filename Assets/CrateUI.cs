@@ -6,19 +6,36 @@ public class CrateUI : MonoBehaviour
 {
 
     public CarInventory carInventory;
-    public List<BottleUI> bottles;
+    public List<BottleUI> bottleUIs;
 
     // Start is called before the first frame update
     void Start()
     {       
+        CarInventory.OnBottlesChanged += UpdateBottleUI;
+    }
+    private void UpdateBottleUI(List<Bottle> bottles)
+    {
+        var totalBottles = bottles.Count;
+        int offset = bottleUIs.Count - bottles.Count;
+
+        for (int i = 0; i < offset; i++)
+        {
+            bottleUIs[i].HideBottle();
+        }
+
+        for (int i = offset; i < bottleUIs.Count; i++)
+        {
+            bottleUIs[i].ShowBottle();
+            bottleUIs[i].SetColour(bottles[i - offset].Color);
+            bottleUIs[i].SetHighlight(false);
+        }
+
+        if (bottles.Count > 0)
+        {
+            bottleUIs[offset].SetHighlight(true);
+        }
+
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        foreach (var bottle in bottles)
-        {
-            bottle.SetColour(BottleColor.Blue);
-        }
-    }
 }

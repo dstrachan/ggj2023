@@ -17,6 +17,7 @@ public class BottleUI : MonoBehaviour
         SetColour(BottleColor.Blue);
     }
 
+
     public void SetColour(BottleColor bc)
     {
         bottle.sprite = bc switch
@@ -36,5 +37,10 @@ public class BottleUI : MonoBehaviour
     public void ShowBottle()
     {
         bottle.enabled = true;
+    }
+
+    public void SetHighlight(bool highlight)
+    {
+        bottleGlow.enabled = highlight;
     }
 }
