@@ -10,6 +10,9 @@ public class GameTimer : MonoBehaviour
     private float remaining_time;
     public TextMeshProUGUI timer_text;
 
+    public GameObject gameOverMenu;
+    public GameObject gameOverBackground;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +32,10 @@ public class GameTimer : MonoBehaviour
     }
 
     void GameOver()
-    {
-        Debug.Log("Game Over!");
+    {   
+        gameOverBackground.SetActive(true);
+        gameOverMenu.SetActive(true);
+     
         this.enabled = false;
     }
 }
