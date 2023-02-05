@@ -61,7 +61,7 @@ public class CrateUI : MonoBehaviour
         }
         else
         {
-            refillSign.SetActive(true);
+            refillSign.SetActive(false);
         }
     }
 
