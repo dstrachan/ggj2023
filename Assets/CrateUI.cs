@@ -11,7 +11,6 @@ public class CrateUI : MonoBehaviour
     public List<BottleUI> bottleUIs;
     public AudioSource checkForRefillAudio;
     
-    
     // Start is called before the first frame update
     void Start()
     {
