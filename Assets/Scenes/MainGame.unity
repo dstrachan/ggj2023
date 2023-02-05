@@ -476,14 +476,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8929069024298255722, guid: 4c75732862514564f996fbc18a622424, type: 3}
-      propertyPath: m_fontSize
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 8929069024298255722, guid: 4c75732862514564f996fbc18a622424, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 36
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8100,10 +8092,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1373836487}
     - target: {fileID: 8856211957655782665, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
-      propertyPath: total_time
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856211957655782665, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
       propertyPath: gameOverMenu
       value: 
       objectReference: {fileID: 726233700}
@@ -8114,18 +8102,6 @@ PrefabInstance:
     - target: {fileID: 8856211957655782670, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856211957655782670, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.075
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856211957655782670, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.075
-      objectReference: {fileID: 0}
-    - target: {fileID: 8856211957655782670, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 8856211957655782670, guid: 83057322f95229a4ebe66f2e94bd6d50, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37458,14 +37434,6 @@ PrefabInstance:
     - target: {fileID: 3108824924683444153, guid: e8e0cd9d88a49894596264e99b71a6ad, type: 3}
       propertyPath: m_Name
       value: RootCrate
-      objectReference: {fileID: 0}
-    - target: {fileID: 5544664948987799916, guid: e8e0cd9d88a49894596264e99b71a6ad, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 837322e09ed5ed741b231c925f5559e2, type: 3}
-    - target: {fileID: 5544664948987799916, guid: e8e0cd9d88a49894596264e99b71a6ad, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5731089245489045916, guid: e8e0cd9d88a49894596264e99b71a6ad, type: 3}
       propertyPath: m_Pivot.x

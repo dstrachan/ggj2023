@@ -15,7 +15,7 @@ public class CrateUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var checkForRefillAudio = GetComponent<AudioSource>();
+     
         CarInventory.OnBottlesChanged += UpdateBottleUI;
         CarInventory.OnBottlesChanged += CheckForRefills;
     }
