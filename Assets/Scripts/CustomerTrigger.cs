@@ -57,7 +57,7 @@ public class CustomerTrigger : MonoBehaviour
         var effectColor = bottleColor switch
         {
             BottleColor.Red => new Vector4(5,0,0,0),
-            BottleColor.Blue => new Vector4(0,0,5,0),
+            BottleColor.Blue => new Vector4(2,1,5,0),
             BottleColor.Green => new Vector4(0,5,0,0),
             BottleColor.Pink => new Vector4(5,0,5,0),
             BottleColor.Yellow => new Vector4(5,5,0,0),

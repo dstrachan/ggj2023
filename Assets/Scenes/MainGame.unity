@@ -37435,6 +37435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RootCrate
       objectReference: {fileID: 0}
+    - target: {fileID: 5544664948987799916, guid: e8e0cd9d88a49894596264e99b71a6ad, type: 3}
+      propertyPath: m_Volume
+      value: 0.408
+      objectReference: {fileID: 0}
     - target: {fileID: 5731089245489045916, guid: e8e0cd9d88a49894596264e99b71a6ad, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
