@@ -759,7 +759,7 @@ MonoBehaviour:
   m_Follow: {fileID: 40770396}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 6
+    OrthographicSize: 8.6
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -3693,7 +3693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2299507290757788327, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
       propertyPath: m_Volume
-      value: 0.114
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 2299507290757788344, guid: 71a7c30af6b3c784da3e97515f54ba87, type: 3}
       propertyPath: m_RootOrder
@@ -41777,7 +41777,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.625
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -41864,7 +41864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
-  m_AssetsPPU: 16
+  m_AssetsPPU: 32
   m_RefResolutionX: 320
   m_RefResolutionY: 180
   m_CropFrame: 0
@@ -42019,7 +42019,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 547972671, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
       propertyPath: minDriftSpeedForEffects
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5401867541133459688, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
       propertyPath: m_RootOrder
@@ -42079,7 +42079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5401867541133459691, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
       propertyPath: maxSpeed
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5401867541133459691, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
       propertyPath: driftFactor
@@ -42091,7 +42091,7 @@ PrefabInstance:
       objectReference: {fileID: 2088475674}
     - target: {fileID: 5401867541133459691, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
       propertyPath: accelerationFactor
-      value: 2.5
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 5401867541133459695, guid: 30a0b153e4e34364cb0aef83f08be13d, type: 3}
       propertyPath: m_Name

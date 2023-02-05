@@ -1027,6 +1027,7 @@ MonoBehaviour:
   reverseFactor: 5
   maxReverse: 1.5
   turnBuildupThreshold: 4
+  engineSound: {fileID: 291937281}
 --- !u!114 &5401867541133459669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,7 +1052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be1203c8c894d00afe154d63c49bd4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDriftSpeedForEffects: 5
+  minDriftSpeedForEffects: 3.5
   dustE: {fileID: 1529307635}
   dustW: {fileID: 2133455196}
   trailE: {fileID: 1259178842}
