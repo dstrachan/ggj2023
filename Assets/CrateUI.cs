@@ -12,7 +12,6 @@ public class CrateUI : MonoBehaviour
     public AudioSource checkForRefillAudio;
     public GameObject refillSign;
     
-    
     // Start is called before the first frame update
     void Start()
     {

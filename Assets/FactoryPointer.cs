@@ -27,8 +27,6 @@ public class FactoryPointer : MonoBehaviour
         var factoryDirection = (facLoc - carLoc);
         var pointDist = Mathf.Min(maxDist, factoryDirection.magnitude / 2.0f);
 
-        Debug.Log(factoryDirection);
-
         transform.position = carLoc + pointDist * factoryDirection.normalized;
         transform.up = facLoc - new Vector2(transform.position.x, transform.position.y);
         transform.position += transform.up * 0.15f * Mathf.Sin(10.0f * Time.time);
